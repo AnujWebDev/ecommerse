@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="utils.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<title>AMIG--A Shopping Website</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light" id="myNav">
+			<a class="navbar-brand" href="#" id="logo">AMIG</a>
+			<button class="navbar-toggler" style="background:#fff;" id="t1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<form class="form-inline my-2 my-lg-0" id="s1" style="margin-left:-153px;">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+			</form>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item active">
+						<a class="nav-link" id="n1" href="#" style="border-bottom:1px solid red" >Home <span class="sr-only">(current)</span></a>
+					</li><li class="nav-item active">
+						<a class="nav-link" id="n2" href="#">About <span class="sr-only">(current)</span></a>
+					</li><li class="nav-item active">
+						<a class="nav-link" id="n3" href="#">Contact Us <span class="sr-only">(current)</span></a>
+					</li><li class="nav-item active">
+						<a class="nav-link" id="n4" href="#">Social links<span class="sr-only">(current)</span></a>
+					</li>
+					<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#loginModal" id="btn1">Login</button>
+					<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#signupModal" id="btn2">Sign Up</button>
+				</ul>
+			</div>
+		</nav>
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="login">Login Here!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form>
+					  <div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					 </div>
+					 <div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					 </div>
+					 <div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+					 </div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	<!-- Sign Up Modal -->
+		<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModal" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="signUp">SignUp Here!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail4">Email</label>
+							<input type="email" class="form-control" id="inputEmail4">
+						</div>
+						<div class="form-group col-md-6">
+						  <label for="inputPassword4">Password</label>
+						  <input type="password" class="form-control" id="inputPassword4">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputAddress">Address</label>
+						<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					</div>
+					<div class="form-group">
+						<label for="inputAddress2">Address 2</label>
+						<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+						  <label for="inputCity">City</label>
+						  <input type="text" class="form-control" id="inputCity">
+						</div>
+						<div class="form-group col-md-4">
+						  <label for="inputState">State</label>
+						  <select id="inputState" class="form-control">
+							<option selected>Choose...</option>
+							<option>...</option>
+						  </select>
+						</div>
+						<div class="form-group col-md-2">
+						  <label for="inputZip">Zip</label>
+						  <input type="text" class="form-control" id="inputZip">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" id="gridCheck">
+						  <label class="form-check-label" for="gridCheck">
+							Check me out
+						  </label>
+						</div>
+					  </div>
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="container" id="cont">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-aos="flip-up" data-aos-duration="1500">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner py-2">
+					<div class="carousel-item active">
+						<img src="images/p2.jpg" height="500px" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="images/p3.jpg" height="500px" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="images/p4.jpg" height="500px" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="images/j.avif" height="500px" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="images/k.jpeg" height="500px" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</button>
+			</div>
+			<div class="row row-cols-1 row-cols-md-3">
+				<div class="col mb-4">
+					<div class="card h-100" data-aos="fade-right">
+						<img src="images/s.jpeg" height="260px" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">SHOES</h5>
+							<p class="card-text text-center">BEST SHOES PRESENT AT BEST PRICES WITH HIGH DURABILITY</p>
+							<div style="display:flex; justify-content:center;" >
+								<button type="button" class="btn btn-dark" style="margin:0 auto;">SHOP NOW --></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card h-100" >
+						<img src="images/m.png" height="260px" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">MOBILES</h5>
+							<p class="card-text text-center">BRAND NEW PREMIUM DEVICE AVAILABLE...</p>
+							<div style="display:flex; justify-content:center;" >
+								<button type="button" class="btn btn-dark" style="margin:0 auto;">SHOP NOW --></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card h-100" data-aos="fade-left" >
+						<img src="images/l.jpg" height="260px" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">LAPTOPS</h5>
+							<p class="card-text text-center ">BEST LAPTOPS WITH NEW PROCESORS AND GENRATIONS.</p>
+							<div style="display:flex; justify-content:center;" >
+								<button type="button" class="btn btn-dark" style="margin:0 auto;">SHOP NOW --></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card h-100" data-aos="fade-right" >
+						<img src="images/s.jpg" height="260px" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">SOFA</h5>
+							<p class="card-text text-center">BEST RATES AVAIALABLE FOR HOME FURNITURES...</p>
+							<div style="display:flex; justify-content:center;" >
+								<button type="button" class="btn btn-dark" style="margin:0 auto;">SHOP NOW --></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card h-100">
+						<img src="images/ma.webp" height="260px" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">GROOMING</h5>
+							<p class="card-text text-center">MAKEUP PRODUCTS IN ALL CATEGORIES AVAIALABLE.</p>
+							<div style="display:flex; justify-content:center;" >
+								<button type="button" class="btn btn-dark" style="margin:0 auto;">SHOP NOW --></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card h-100" data-aos="fade-left" >
+						<img src="images/ki.jpg" height="260px" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">KITCHEN SET</h5>
+							<p class="card-text text-center">ALL TYPES OF KITCHEN ITEMS AVAILABLE AT SALE.</p><div style="display:flex; justify-content:center;" >
+								<button type="button" class="btn btn-dark" style="margin:0 auto;">SHOP NOW --></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="py-5 bg-dark">
+            <div class="container-fluid"><p class="m-0 text-center text-white">Copyright © Your Website 2022</p></div>
+        </footer>
+		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+		<script src="js/jquery.3.6.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		AOS.init();
+		</script>
+	</body>
+</html>
